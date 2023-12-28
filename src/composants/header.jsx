@@ -5,13 +5,18 @@ import logo from "../images/Sans titre.png"
 function Header() { 
     const header = cafeServices.map((cafeService) =>(
         <ul>
-            <li>{cafeService}</li>
+            <li><a href="#">{cafeService}</a></li>
         </ul>
     ))
     return(
-        <div>
-            <img src={logo} alt="" />
-            {header}
+        <div className="contenair-header">
+            <div>
+                <img className="logo" src={logo} alt="" />
+            </div>
+            <div className="nav-header">
+               {header}
+            </div>
+
         </div>
           
 )}

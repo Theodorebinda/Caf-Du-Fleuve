@@ -1,0 +1,18 @@
+
+.contenair-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid yellowgreen;
+    
+}
+.logo{
+    width: 25px;
+    height: 50px;
+    padding-left: 50px;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
