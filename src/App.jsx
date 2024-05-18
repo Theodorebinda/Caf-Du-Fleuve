@@ -1,12 +1,12 @@
 import NavBar from "./composants/NavBar";
-import HiroSection from "./composants/HiroSection";
+import Home from "../pages/Home";
 import("./index.css");
 
 function App() {
   return (
     <>
       <NavBar />
-      <HiroSection />
+      <Home />
     </>
   );
 }
