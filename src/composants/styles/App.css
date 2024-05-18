@@ -1,0 +1,22 @@
+/* App.css */
+.typewriter {
+    font-size: 1.875rem; 
+    color: #140100;
+    line-height: 2.25rem;
+    padding-bottom: 10px;
+    font-weight:600;
+    font-family: 'Italianno', serif;
+    overflow: hidden;
+    display: inline-block;
+    border-right:none; /* Style du curseur */
+  }
+  
+  .cursor {
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  

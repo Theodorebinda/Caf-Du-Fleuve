@@ -16,6 +16,12 @@ export default {
         animation: {
           'fade-in': 'fade-in 2s ease-out',
         },
+        fontFamily: {
+          sans: ['Roboto', 'sans-serif'],
+          italianno:[ "Italianno", "cursive"]
+          // Ajoutez d'autres familles de polices ici si nécessaire
+        },
+       
       },
     },
   },
