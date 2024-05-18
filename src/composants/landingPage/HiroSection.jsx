@@ -1,4 +1,4 @@
-import Typewriter from "./TypeWrither";
+import Typewriter from "../TypeWrither";
 
 function HiroSection() {
   return (
@@ -18,7 +18,7 @@ function HiroSection() {
                 deleteDelay={1000}
               />
             </span>
-            <button className="border-2 py-3 px-5 rounded-lg s bg-[#588b00] text-[#140100] font-semibold hover:bg-[#140100] hover:text-[#588b00] shadow-md">
+            <button className="border-2 py-3 px-5 rounded-lg s bg-[#588b00] text-[#140100] font-semibold hover:bg-[#140100] hover:text-[#588b00]">
               Commander
             </button>
           </div>

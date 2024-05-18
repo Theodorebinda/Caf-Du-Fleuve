@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import "./styles/App.css";
+import "../styles/App.css";
 
 const Typewriter = ({ text, speed, deleteDelay }) => {
   const [displayedText, setDisplayedText] = useState("");

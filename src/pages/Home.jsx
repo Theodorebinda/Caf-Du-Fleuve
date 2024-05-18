@@ -1,4 +1,4 @@
-import HiroSection from "../src/composants/HiroSection";
+import HiroSection from "../composants/landingPage/HiroSection";
 
 function Home() {
   return (
