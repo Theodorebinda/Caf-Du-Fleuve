@@ -1,16 +1,14 @@
-import './App.css'
-import NavBar from './composants/NavBar'
-import Header from './composants/header'
+import NavBar from "./composants/NavBar";
+import HiroSection from "./composants/HiroSection";
+import("./index.css");
 
 function App() {
-    return(
-        <>
-            <NavBar />
-            <Header />
-        </>
-       
-    )
-
+  return (
+    <>
+      <NavBar />
+      <HiroSection />
+    </>
+  );
 }
 
-export default App
+export default App;
