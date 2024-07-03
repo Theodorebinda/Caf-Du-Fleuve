@@ -12,14 +12,19 @@ export default {
             '0%': { opacity: '0' },
             '100%': { opacity: '1' },
           },
+          'tours': {
+            '0%': { opacity: '0' },
+            '100%': { opacity: '1' },
+          },
         },
         animation: {
           'fade-in': 'fade-in 2s ease-out',
+          'tours': 'tours 2s ease-in-out infinite'
         },
         fontFamily: {
           sans: ['Roboto', 'sans-serif'],
           italianno:[ "Italianno", "cursive"]
-          // Ajoutez d'autres familles de polices ici si nécessaire
+          
         },
        
       },

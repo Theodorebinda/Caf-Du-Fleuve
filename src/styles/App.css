@@ -2,7 +2,7 @@
 .typewriter {
     font-size: 1.875rem; 
     color: #140100;
-    line-height: 2.25rem;
+    line-height: 2rem;
     padding-bottom: 10px;
     font-weight:600;
     font-family: 'Italianno', serif;
@@ -19,4 +19,3 @@
     from, to { border-color: transparent }
     50% { border-color: black }
   }
-  

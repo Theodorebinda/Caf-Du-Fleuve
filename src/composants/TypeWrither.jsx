@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import "../styles/App.css";
 
 const Typewriter = ({ text, speed, deleteDelay }) => {
@@ -37,12 +37,6 @@ const Typewriter = ({ text, speed, deleteDelay }) => {
       <span className="cursor">|</span>
     </div>
   );
-};
-
-Typewriter.propTypes = {
-  text: PropTypes.string.isRequired,
-  speed: PropTypes.number.isRequired,
-  deleteDelay: PropTypes.number.isRequired, // Adding the deleteDelay prop type
 };
 
 export default Typewriter;

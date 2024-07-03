@@ -1,0 +1,45 @@
+{
+    "partenaires":[
+        {
+            "nom":"Kin Marche",
+            "genre":"Super marche",
+            "logo":"",
+            "ville":"Kinshasa"
+        },
+        {
+            "nom":"New Lys",
+            "genre":"Super marche",
+            "logo":"",
+            "ville":"Matadi"
+        },
+        {
+            "nom":"Kin Marche",
+            "genre":"Super marche",
+            "logo":"",
+            "ville":"Lubumbashi"
+        },
+        {
+            "nom":"Kin Marche",
+            "genre":"Super marche",
+            "logo":"",
+            "ville":"Boma"
+        }
+    ],
+    "produits":[
+        {
+            "nom":"Robusta",
+            "logo":"src/images/Sans titre.png"
+
+        },
+        {
+            "nom":"Arabicca",
+            "logo":"src/images/Sans titre.png"
+        },
+        {
+            "nom":"Petit kwilu",
+            "logo":"src/images/Sans titre.png"
+        }
+    ]
+    
+}
+    
