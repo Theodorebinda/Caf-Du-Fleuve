@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "site de palme d'or",
   "main": "postcss.config.js",
+  "type": "module",
   "dependencies": {
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^3.2.1",
@@ -132,10 +133,11 @@
     "wrap-ansi": "^8.1.0",
     "wrap-ansi-cjs": "^7.0.0",
     "yallist": "^3.1.1",
-    "type": "module",
     "yaml": "^2.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
