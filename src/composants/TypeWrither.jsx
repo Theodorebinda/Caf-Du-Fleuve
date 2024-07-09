@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import "../styles/App.css";
 
-const Typewriter = ({ text, speed, deleteDelay }) => {
+const Typewriter = ({ text, speed, deleteDelay, className }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -32,7 +32,7 @@ const Typewriter = ({ text, speed, deleteDelay }) => {
   }, [displayedText, index, text, speed, deleteDelay, isDeleting]);
 
   return (
-    <div className="typewriter">
+    <div className={`${className} 'typewriter'`}>
       {displayedText}
       <span className="cursor">|</span>
     </div>

@@ -60,7 +60,7 @@ function Footer() {
             </a>
           </ul>
         </div>
-        <div className="bg-[#c2c2c2] py-2 fixed bottom-0 w-full ">
+        <div className="bg-[#c2c2c2] py-2  bottom-0 w-full ">
           <p className="ml-4 md:ml-10 text-xs">
             Design{" "}
             <a
