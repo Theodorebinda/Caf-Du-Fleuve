@@ -1,17 +1,15 @@
-import Footer from "./composants/Footer";
 import React from "react";
-import NavBar from "./composants/NavBar";
-import PartenairProvider from "./composants/PartenairProvider";
 import Home from "./pages/Home";
+import Layourt from "./routes/layourt";
+import Contact from "./pages/Contact";
 import("./index.css");
 
 function App() {
   return (
-    <PartenairProvider>
-      <NavBar />
+    <Layourt>
       <Home />
-      <Footer />
-    </PartenairProvider>
+      <Contact />
+    </Layourt>
   );
 }
 

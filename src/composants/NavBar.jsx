@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,10 @@ function NavBar() {
 
   return (
     <div className="flex justify-between items-center bg-[#588b00] fixed top-0 z-20 w-full text-white">
-      <div className="ml-4 md:ml-10 my-3 flex justify-between items-center gap-3">
+      <Link
+        to={"/"}
+        className="ml-4 md:ml-10 my-3 flex justify-between items-center gap-3"
+      >
         <span className="font-[Italianno] text-3xl font-medium  md:block animate-pulse">
           {"Café du fleuve"}
         </span>
@@ -19,13 +23,21 @@ function NavBar() {
           src="src\images\Sans titre.png"
           alt=""
         />
-      </div>
+      </Link>
 
       <ul className="md:flex md:justify-between md:items-center md:gap-6 text-md mr-10 hidden">
-        <li>Acceuil</li>
-        <li>A propos</li>
-        <li>Poduits</li>
-        <li>Contact</li>
+        <Link to={"/"}>
+          <li>Accueil</li>
+        </Link>
+        <Link to={"/about"}>
+          <li>Apropos</li>
+        </Link>
+        <Link to={"/product"}>
+          <li>Produits</li>
+        </Link>
+        <Link to={"/contact"}>
+          <li>Contact</li>
+        </Link>
       </ul>
       {!isOpen ? (
         <button
