@@ -27,16 +27,23 @@ function Footer() {
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="facebook"
           >
             <FaFacebook />
           </a>
-          <a href="https://www.X.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.X.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
             <FaXTwitter />
           </a>
           <a
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="insta"
           >
             <FaInstagram />
           </a>
@@ -44,6 +51,7 @@ function Footer() {
             href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Youtube"
           >
             <FaYoutube />
           </a>
@@ -52,10 +60,10 @@ function Footer() {
           <h4>CONTACT US</h4>
           <ul>
             <li>ADRESSE : Concession Chanic /Kitambo Magasin</li>
-            <a href="mailto:palmedor@gmail.com">
+            <a href="mailto:palmedor@gmail.com" aria-label="email">
               <li>MAIL :palmedor@gmail.com</li>
             </a>
-            <a href="tel:00243 999999999">
+            <a href="tel:00243 999999999" aria-label="number">
               <li>TELEPHONE : 00243 999999999</li>
             </a>
           </ul>
@@ -66,6 +74,7 @@ function Footer() {
             <a
               className=" animate-pulse font-bold after:content-['_']"
               href="https://github.com/Theodorebinda?"
+              aria-label="Theodore"
             >
               Theodore
             </a>

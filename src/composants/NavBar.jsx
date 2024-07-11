@@ -10,7 +10,7 @@ function NavBar() {
   };
 
   return (
-    <div className="flex justify-between items-center bg-[#588b00] fixed top-0 z-20 w-full text-white">
+    <div className="flex justify-between items-center bg-[#3E6100] fixed top-0 z-20 w-full text-white">
       <Link
         to={"/"}
         className="ml-4 md:ml-10 my-3 flex justify-between items-center gap-3"
