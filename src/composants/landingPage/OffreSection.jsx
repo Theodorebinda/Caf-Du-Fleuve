@@ -2,6 +2,8 @@ import { IoIosCafe } from "react-icons/io";
 import React from "react";
 import CarrouselConsomateur from "../CarrouselConsomateur";
 import { motion } from "framer-motion";
+import imageBer from "../../images/imageBernice.jpg";
+import imageTasse from "../../images/imgTasseCafe_02.png";
 
 export default function OffreSections() {
   return (
@@ -17,7 +19,7 @@ export default function OffreSections() {
           <div className="h-[530px] md:w-2/3">
             <img
               className="object-cover object-top  h-full w-full "
-              src="src\images\imageBernice.jpg"
+              src={imageBer}
               alt="nos offres"
             />
           </div>
@@ -26,8 +28,8 @@ export default function OffreSections() {
               <div className="m-2">
                 <img
                   className="object-cover h-full w-full md:w-80 "
-                  src="src\images\imgTasseCafe_02.png"
-                  alt=""
+                  src={imageTasse}
+                  alt="tasse cafe"
                 />
               </div>
               <div className="w-full ">

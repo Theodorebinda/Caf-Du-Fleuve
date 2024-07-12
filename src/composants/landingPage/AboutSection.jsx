@@ -2,6 +2,7 @@ import { IoIosCafe } from "react-icons/io";
 import React from "react";
 import Typewriter from "../TypeWrither";
 import { motion } from "framer-motion";
+import imageCaf from "../../images/image cafe.jpg";
 function AboutSection() {
   return (
     <div className="flex flex-wrap md:flex-nowrap justify-between  bg-[#a3bc77] md:h-screen w-full font-sans">
@@ -77,7 +78,7 @@ function AboutSection() {
         <div className="">
           <img
             className="w-full h-full object-cover  "
-            src="src\images\image cafe.jpg"
+            src={imageCaf}
             alt="cafeDuFleuve"
           />
           <span className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-white text-xl font-bold">
