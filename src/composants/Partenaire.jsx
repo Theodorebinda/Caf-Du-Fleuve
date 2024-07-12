@@ -6,7 +6,7 @@ function Partenair({ nom, logo, genre }) {
   const { produits } = useContext(globalContext);
   return (
     <>
-      <div className=" flex justify-between flex-wrap md:ml-auto w-full rounded-lg py-8 pl-4">
+      <div className=" flex justify-between flex-wrap md:ml-auto w-full rounded-lg py-8 ">
         <div className=" flex justify-between items-start ">
           <div className="w-[20%] h-auto rounded-lg bg-white">
             <img src={logo} alt="" />
@@ -15,7 +15,7 @@ function Partenair({ nom, logo, genre }) {
             <span className="text-sm">{nom}</span>
             <div>
               <span>{genre}</span>
-              <span className="text-xs">
+              <span className="text-xs after:'_r'">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
                 numquam. Quod blanditiis in vel
               </span>

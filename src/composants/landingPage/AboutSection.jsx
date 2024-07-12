@@ -63,7 +63,7 @@ function AboutSection() {
               </p>
             </div>
           </div>
-          <button className="border-2 py-3 px-5 rounded-lg  bg-[#588b00]  text-[#140100] font-semibold hover:bg-[#140100] hover:text-[#588b00] w-1/2 md:w-1/3">
+          <button className="border-2 py-3 px-5 rounded-lg  bg-[#3E6100]  text-white font-semibold hover:bg-[#140100] hover:text-[#588b00] w-1/2 md:w-1/3">
             En savoir plus
           </button>
         </div>

@@ -43,7 +43,7 @@ function NavBar() {
           <Link to={"/contact"}>Contact</Link>
         </li>
       </ul>
-      <div className="lg:hidden ">
+      <div className="md:hidden ">
         <Hamburger toggled={isOpen} size={30} toggle={setIsOpen} />
       </div>
       <AnimatePresence>
@@ -66,10 +66,18 @@ function NavBar() {
               }}
             > */}
             <ul className="flex flex-col justify-between h-full pl-10 py-5">
-              <li>Acceuil</li>
-              <li>A propos</li>
-              <li>Poduits</li>
-              <li>Contact</li>
+              <li>
+                <Link to={"/"}>Accueil</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>Apropos</Link>
+              </li>
+              <li>
+                <Link to={"/product"}>Produits</Link>
+              </li>
+              <li>
+                <Link to={"/contact"}>Contact</Link>
+              </li>
             </ul>
           </motion.div>
           // </motion.div>

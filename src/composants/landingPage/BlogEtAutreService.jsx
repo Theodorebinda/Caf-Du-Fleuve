@@ -13,7 +13,7 @@ function AutreService() {
       className="bg-[url('.\images\bg_03.png')] py-6 w-full h-full "
     >
       <div className="flex flex-col m-4">
-        <div className="ml-4">
+        <div className="">
           <div className="flex justify-start mb-2 gap-2 items-center">
             <IoIosCafe />
             <span className="text-sm font-semibold">
@@ -37,8 +37,21 @@ function AutreService() {
 
           <div className="flex flex-col md:flex-wrap justify-center items-center h-max-full  gap-5">
             <div className=" flex flex-col lg:flex-row justify-between items-center lg:gap-10">
-              <img className="" src={imageService} alt="image service" />
-              <span>
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className=""
+                src={imageService}
+                alt="image service"
+              />
+              <motion.span
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis
                 eligendi ipsa voluptaspariatur quis adipisci quidem unde,
@@ -46,11 +59,24 @@ function AutreService() {
                 Voluptates laboriosam inventore ad ipsam! Eos asperiores enim
                 fugiat, error mollitia maxime esse deleniti sed! Iste, delectus
                 quaerat?
-              </span>
+              </motion.span>
             </div>
             <div className=" flex flex-col lg:flex-row-reverse justify-between items-center lg:gap-10">
-              <img className="" src={imageService} alt="autre service" />
-              <span>
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className=""
+                src={imageService}
+                alt="autre service"
+              />
+              <motion.span
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis
                 eligendi ipsa voluptaspariatur quis adipisci quidem unde,
@@ -58,11 +84,24 @@ function AutreService() {
                 Voluptates laboriosam inventore ad ipsam! Eos asperiores enim
                 fugiat, error mollitia maxime esse deleniti sed! Iste, delectus
                 quaerat?
-              </span>
+              </motion.span>
             </div>
             <div className=" flex flex-col lg:flex-row justify-between items-center lg:gap-10">
-              <img className="" src={imageService} alt="autre service" />
-              <span>
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className=""
+                src={imageService}
+                alt="autre service"
+              />
+              <motion.span
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis
                 eligendi ipsa voluptaspariatur quis adipisci quidem unde,
@@ -70,7 +109,7 @@ function AutreService() {
                 Voluptates laboriosam inventore ad ipsam! Eos asperiores enim
                 fugiat, error mollitia maxime esse deleniti sed! Iste, delectus
                 quaerat?
-              </span>
+              </motion.span>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 function HiroSection() {
   return (
-    <div className="bg-fixed md:bg-scroll  bg-[url('./images/header.png')] bg-no-repeat pt-28 md:pt-20 w-full relative  h-screen">
+    <div className="bg-fixed md:bg-scroll  bg-[url('./images/header.png')] bg-no-repeat pt-28 md:pt-20 max-w-full  relative  h-screen">
       <div className="">
         <div className="flex flex-col md:w-1/2  md:gap-20 md:m-8 mx-4 md:max-h-full">
           <h1 className="text-4xl  font-bold font-[Italianno] text-[#588b00] animate-pulse">
@@ -23,7 +23,7 @@ function HiroSection() {
                 deleteDelay={1000}
               />
             </span>
-            <button className="w-1/2 md:w-1/4 border py-3 px-5 rounded-lg  bg-[#588b00] text-[#140100] font-semibold hover:bg-[#140100] hover:text-[#588b00] ">
+            <button className="w-1/2 md:w-1/4 border py-3 px-5 rounded-lg  bg-[#3E6100] text-white font-semibold hover:bg-[#140100] hover:text-[#588b00] ">
               Commander
             </button>
           </div>

@@ -8,7 +8,7 @@ export default function ErrorPage() {
     <div className="h-screen flex items-center justify-center">
       <div
         id="error-page"
-        className="flex flex-col justify-center items-center w-1/3  h-1/3 bg-[#4d4d4d] rounded text-white font-semibold"
+        className="flex flex-col justify-center items-center md:w-1/3 px-8 h-1/3 bg-[#4d4d4d] rounded text-white font-semibold"
       >
         <h1 className="text-2xl p-4">Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>

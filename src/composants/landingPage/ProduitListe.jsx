@@ -17,7 +17,7 @@ function ProduitListe() {
         viewport={{ once: true }}
         className="w-full md:my-8"
       >
-        <div className="flex flex-col items-start gap-2 mx-8">
+        <div className="flex flex-col items-start gap-2 mx-4">
           <IoIosCafe />
           <span className="text-sm font-semibold">
             BOUTIQUE SPECIAL EN LIGNE

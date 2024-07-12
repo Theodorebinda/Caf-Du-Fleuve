@@ -15,11 +15,11 @@ function Footer() {
           </span>
           <img
             className="sm:h-14 h-14	"
-            src="src\images\Sans titre.png"
+            src="https://res.cloudinary.com/dhdaxlymt/image/upload/v1720807737/cafeDuFleuve/Sans_titre_hr65cz.png"
             alt=""
           />
         </div>
-        <div className="flex flex-row justify-start md:gap-20 items-start">
+        <div className="flex flex-col md:flex-row justify-start md:gap-20 items-start">
           <div>
             <p className="ml-4 md:ml-10 text-sm my-4">
               Cultivé et produit en Republique Democratique du Congo
@@ -156,7 +156,7 @@ function Footer() {
             Design{" "}
             <a
               className=" font-bold after:content-['_'] text-black"
-              href="https://github.com/Theodorebinda?"
+              href="https://portefolio-gules.vercel.app/"
               aria-label="Theodore"
             >
               Theodore
