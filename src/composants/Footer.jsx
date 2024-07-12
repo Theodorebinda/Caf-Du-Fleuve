@@ -19,55 +19,130 @@ function Footer() {
             alt=""
           />
         </div>
-        <p className="ml-4 md:ml-10 text-sm my-4">
-          Le seul café cultivé et produit à Kinshasa RDC
-        </p>
-        <div className="flex justify-start items-center gap-4 my-4 ml-4">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="facebook"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://www.X.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="X"
-          >
-            <FaXTwitter />
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="insta"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Youtube"
-          >
-            <FaYoutube />
-          </a>
+        <div className="flex justify-between md:justify-start md:gap-20 items-start">
+          <div>
+            <p className="ml-4 md:ml-10 text-sm my-4">
+              Cultivé et produit en Republique Democratique du Congo
+            </p>
+            <div className="flex justify-start items-center gap-4 my-4 ml-4 md:ml-10">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.X.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="insta"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+              >
+                <FaYoutube />
+              </a>
+            </div>
+            <div className="ml-4 my-4 mb-8 md:ml-10 flex justify-start gap-2 flex-col">
+              <h4>CONTACT US</h4>
+              <ul>
+                <li>ADRESSE : Concession Chanic /Kitambo Magasin</li>
+                <a href="mailto:cafedufleuve@gmail.com" aria-label="email">
+                  <li>MAIL :cafedufleuve@gmail.com</li>
+                </a>
+                <a href="tel:00243 999999999" aria-label="number">
+                  <li>TELEPHONE : 00243 999999999</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p className="ml-4 md:ml-10 text-sm my-5">
+              Contactez notre structure pour plus de detail
+            </p>
+            <div className="flex justify-start items-center gap-4 my-4 ml-4 md:ml-10">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.X.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="insta"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+              >
+                <FaYoutube />
+              </a>
+            </div>
+            <div className="ml-4 my-4 mb-8 md:ml-10 flex justify-start gap-2 flex-col">
+              <h4>CONTACT US</h4>
+              <ul>
+                <li>ADRESSE : Concession Silikin village /Kinshasa Gombe</li>
+                <a href="mailto:palmedor@gmail.com" aria-label="email">
+                  <li>MAIL :palmedor@gmail.com</li>
+                </a>
+                <a href="tel:00243 999999999" aria-label="number">
+                  <li>TELEPHONE : 00243 999999999</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <p className="ml-4 md:ml-10 text-sm my-4">
+              Visitez nos differents sites
+            </p>
+            <div className="flex justify-start items-center gap-4 my-4 ml-4 md:ml-10">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Palme D'or">
+                    Palme D'or
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Palme D'or">
+                    Hydroforce
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="ml-4 my-4 mb-8 md:ml-10 flex justify-start gap-2 flex-col">
-          <h4>CONTACT US</h4>
-          <ul>
-            <li>ADRESSE : Concession Chanic /Kitambo Magasin</li>
-            <a href="mailto:palmedor@gmail.com" aria-label="email">
-              <li>MAIL :palmedor@gmail.com</li>
-            </a>
-            <a href="tel:00243 999999999" aria-label="number">
-              <li>TELEPHONE : 00243 999999999</li>
-            </a>
-          </ul>
-        </div>
+
         <div className="bg-[#c2c2c2] py-2  bottom-0 w-full ">
           <p className="ml-4 md:ml-10 text-xs">
             Design{" "}

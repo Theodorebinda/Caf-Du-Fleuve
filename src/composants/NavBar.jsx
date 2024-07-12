@@ -1,16 +1,20 @@
-import { useState } from "react";
+import Hamburger from "hamburger-react";
+import { useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
+import { useClickAway } from "react-use";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const ref = useRef(null);
+  useClickAway(ref, () => setIsOpen(false));
 
   return (
-    <div className="flex justify-between items-center bg-[#3E6100] fixed top-0 z-20 w-full text-white">
+    <div
+      ref={ref}
+      className="flex justify-between items-center bg-[#3E6100] fixed top-0 z-20 w-full text-white"
+    >
       <Link
         to={"/"}
         className="ml-4 md:ml-10 my-3 flex justify-between items-center gap-3"
@@ -39,53 +43,71 @@ function NavBar() {
           <li>Contact</li>
         </Link>
       </ul>
-      {!isOpen ? (
-        <button
-          className="block md:hidden text-black  focus:outline-none mr-6"
-          onClick={toggleMenu}
-        >
-          <svg
-            className="h-6 w-6 fill-current"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+      <div className="lg:hidden ">
+        <Hamburger toggled={isOpen} size={30} toggle={setIsOpen} />
+      </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className=" fixed top-20 right-0 w-full h-[16rem] bg-[#3a5d2a] bg-opacity-90 shadow-lg z-50  md:hidden"
           >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2H3zm0 8a1 1 0 0 1 0-2h18a1 1 0 1 1 0 2H3zm0 8a1 1 0 1 1 0-2h18a1 1 0 1 1 0 2H3z"
-            />
-          </svg>
-        </button>
-      ) : (
-        <div>
-          <button
-            onClick={toggleMenu}
-            className=" block md:hidden text-black  focus:outline-none mr-6"
-          >
-            <span>
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <ul className="flex flex-col justify-between h-full pl-10 py-4">
+              <motion.li
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1 / 10,
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </span>
-          </button>
-          <ul className="flex flex-col justify-between w-full pl-10 fixed top-20 right-0  h-[200px] bg-[#a8bd83] shadow-lg z-50 md:hidden">
-            <li>Acceuil</li>
-            <li>A propos</li>
-            <li>Poduits</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      )}
+                Acceuil
+              </motion.li>
+              <motion.li
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1 / 10,
+                }}
+              >
+                A propos
+              </motion.li>
+              <motion.li
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1 / 10,
+                }}
+              >
+                Poduits
+              </motion.li>
+              <motion.li
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1 / 10,
+                }}
+              >
+                Contact
+              </motion.li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
