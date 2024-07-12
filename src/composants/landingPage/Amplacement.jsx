@@ -3,6 +3,7 @@ import React from "react";
 import Controls from "../controles";
 import PartenairList from "../PartenairList";
 import { motion } from "framer-motion";
+import imagecaf from "../../images/cafe.jpg";
 
 function Amplacement() {
   return (
@@ -44,7 +45,7 @@ function Amplacement() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.1 }}
                 className="object-cover h-full w-full "
-                src=".\images\cafe.jpg"
+                src={imagecaf}
                 alt=""
               />
             </div>
