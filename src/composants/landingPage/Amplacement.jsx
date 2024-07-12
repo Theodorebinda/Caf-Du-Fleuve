@@ -44,7 +44,7 @@ function Amplacement() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.1 }}
                 className="object-cover h-full w-full "
-                src="src\images\cafe.jpg"
+                src="./images/cafe.jpg"
                 alt=""
               />
             </div>
