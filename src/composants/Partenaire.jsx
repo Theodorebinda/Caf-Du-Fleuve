@@ -12,7 +12,7 @@ function Partenair({ nom, logo, genre }) {
             <img src={logo} alt="" />
           </div>
           <div className="">
-            <h4 className="text-sm">{nom}</h4>
+            <span className="text-sm">{nom}</span>
             <div>
               <span>{genre}</span>
               <span className="text-xs">

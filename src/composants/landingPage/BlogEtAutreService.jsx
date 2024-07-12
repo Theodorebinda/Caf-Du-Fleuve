@@ -1,9 +1,16 @@
 import { IoIosCafe } from "react-icons/io";
+import { motion } from "framer-motion";
 import React from "react";
 
 function AutreService() {
   return (
-    <div className="bg-[url('.\images\bg_03.png')] py-6 w-full h-full ">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3 }}
+      viewport={{ once: true }}
+      className="bg-[url('.\images\bg_03.png')] py-6 w-full h-full "
+    >
       <div className="flex flex-col m-4">
         <div className="ml-4">
           <div className="flex justify-start mb-2 gap-2 items-center">
@@ -67,7 +74,7 @@ function AutreService() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default AutreService;

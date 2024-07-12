@@ -1,10 +1,17 @@
 import { IoIosCafe } from "react-icons/io";
 import React from "react";
 import Typewriter from "../TypeWrither";
+import { motion } from "framer-motion";
 function AboutSection() {
   return (
     <div className="flex flex-wrap md:flex-nowrap justify-between  bg-[#a3bc77] md:h-screen w-full font-sans">
-      <div className="w-full md:w-1/2 rounded-md bg-white  m-4 md:m-2 p-6 md:p-4 ">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="w-full md:w-1/2 rounded-md bg-white  m-4 md:m-2 p-6 md:p-4 "
+      >
         <div className="flex justify-start items-center gap-2 ">
           <IoIosCafe />
           <span className="text-sm font-semibold">ABOUT US</span>
@@ -59,10 +66,15 @@ function AboutSection() {
             En savoir plus
           </button>
         </div>
-      </div>
-      <div className=" relative w-full md:w-1/2 overflow-hidden md:m-2  rounded-lg ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className=" relative w-full md:w-1/2 overflow-hidden md:m-2  rounded-lg "
+      >
         <div className="">
-          {" "}
           <img
             className="w-full h-full object-cover  "
             src="src\images\image cafe.jpg"
@@ -76,7 +88,7 @@ function AboutSection() {
             />
           </span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

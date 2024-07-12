@@ -14,14 +14,16 @@ function Controls() {
 
   return (
     <div className="bg-[#FFF] flex justify-between items-center flex-wrap md:m-auto md:w-3/4 rounded-lg p-4 gap-5">
-      <span className="font-sans">Nous sommes present sur ces ville </span>
-      <select value={ville} onChange={handleChange}>
-        {villes.map((ville, index) => (
-          <option key={index} value={ville}>
-            {ville}
-          </option>
-        ))}
-      </select>
+      <label className="font-sans">
+        Nous sommes present sur ces ville :
+        <select value={ville} onChange={handleChange}>
+          {villes.map((ville, index) => (
+            <option key={index} value={ville}>
+              {ville}
+            </option>
+          ))}
+        </select>
+      </label>
     </div>
   );
 }

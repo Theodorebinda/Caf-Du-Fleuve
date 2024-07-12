@@ -2,10 +2,17 @@ import { IoIosCafe } from "react-icons/io";
 import React from "react";
 import Controls from "../controles";
 import PartenairList from "../PartenairList";
+import { motion } from "framer-motion";
 
 function Amplacement() {
   return (
-    <div className="h-full max-w-full my-8 p-3 md:p-3 bg-[url('.\images\bg_03.png')] ">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="h-full max-w-full my-8 p-3 md:p-3 bg-[url('.\images\bg_03.png')] "
+    >
       <div className="  w-full  ">
         <div className="flex md:justify-between flex-wrap md:flex-nowrap gap-2">
           <div className="w-full md:w-1/2 flex flex-col gap-4">
@@ -32,8 +39,10 @@ function Amplacement() {
               café, c'est le choix du café authentique et savoureux, qui vous
               accompagne tout au long de la journée.
             </span>
-            <div className="w-1/2">
-              <img
+            <div className="w-1/2 py-2">
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.1 }}
                 className="object-cover h-full w-full "
                 src="src\images\cafe.jpg"
                 alt=""
@@ -48,9 +57,9 @@ function Amplacement() {
                   NOS EMPLACEMENT PRIVILEGIER
                 </span>
               </div>
-              <h4 className="text-3xl font-bold text-[#140100]  mb-4">
+              <span className="text-3xl font-bold text-[#140100]  mb-4">
                 NOS POINT DE VENTE EN RDC
-              </h4>
+              </span>
             </div>
             <div>
               <Controls />
@@ -59,7 +68,7 @@ function Amplacement() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

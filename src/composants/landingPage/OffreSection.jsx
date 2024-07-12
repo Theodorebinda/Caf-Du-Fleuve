@@ -1,11 +1,18 @@
 import { IoIosCafe } from "react-icons/io";
 import React from "react";
 import CarrouselConsomateur from "../CarrouselConsomateur";
+import { motion } from "framer-motion";
 
 export default function OffreSections() {
   return (
     <>
-      <div className="w-full flex flex-col mb-8">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="w-full flex flex-col mb-8"
+      >
         <div className="w-full md:flex justify-between items-center gap-8  bg-[#f3f3f3] md:py-3 mt-6">
           <div className="h-[530px] md:w-2/3">
             <img
@@ -67,7 +74,7 @@ export default function OffreSections() {
           </div>
         </div>
         <CarrouselConsomateur />
-      </div>
+      </motion.div>
     </>
   );
 }

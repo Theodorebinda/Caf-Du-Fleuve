@@ -30,18 +30,18 @@ function NavBar() {
       </Link>
 
       <ul className="md:flex md:justify-between md:items-center md:gap-6 text-md mr-10 hidden">
-        <Link to={"/"}>
-          <li>Accueil</li>
-        </Link>
-        <Link to={"/about"}>
-          <li>Apropos</li>
-        </Link>
-        <Link to={"/product"}>
-          <li>Produits</li>
-        </Link>
-        <Link to={"/contact"}>
-          <li>Contact</li>
-        </Link>
+        <li>
+          <Link to={"/"}>Accueil</Link>
+        </li>
+        <li>
+          <Link to={"/about"}>Apropos</Link>
+        </li>
+        <li>
+          <Link to={"/product"}>Produits</Link>
+        </li>
+        <li>
+          <Link to={"/contact"}>Contact</Link>
+        </li>
       </ul>
       <div className="lg:hidden ">
         <Hamburger toggled={isOpen} size={30} toggle={setIsOpen} />
@@ -53,59 +53,26 @@ function NavBar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className=" fixed top-20 right-0 w-full h-[16rem] bg-[#3a5d2a] bg-opacity-90 shadow-lg z-50  md:hidden"
+            className=" fixed top-20 right-0 w-full h-[16rem] bg-[#3a5d2a] shadow-lg z-50  md:hidden"
           >
-            <ul className="flex flex-col justify-between h-full pl-10 py-4">
-              <motion.li
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                  delay: 0.1 / 10,
-                }}
-              >
-                Acceuil
-              </motion.li>
-              <motion.li
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                  delay: 0.1 / 10,
-                }}
-              >
-                A propos
-              </motion.li>
-              <motion.li
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                  delay: 0.1 / 10,
-                }}
-              >
-                Poduits
-              </motion.li>
-              <motion.li
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                  delay: 0.1 / 10,
-                }}
-              >
-                Contact
-              </motion.li>
+            {/* <motion.div
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.1 / 10,
+              }}
+            > */}
+            <ul className="flex flex-col justify-between h-full pl-10 py-5">
+              <li>Acceuil</li>
+              <li>A propos</li>
+              <li>Poduits</li>
+              <li>Contact</li>
             </ul>
           </motion.div>
+          // </motion.div>
         )}
       </AnimatePresence>
     </div>

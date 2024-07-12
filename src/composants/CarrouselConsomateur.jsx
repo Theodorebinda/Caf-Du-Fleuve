@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AnimatePresence, motion } from "framer-motion";
 import { useContext } from "react";
 import { globalContext } from "./PartenairProvider";
 import { IoIosCafe } from "react-icons/io";
@@ -24,13 +25,17 @@ export default function CarrouselConsomateur() {
       {produits?.map((produit, index) => (
         <div key={index} className="flex justify-center items-center">
           <div className="md:flex md:justify-center md:items-center md:w-full md:m-8 md:gap-20">
-            <div className="flex justify-center items-center md:w-1/6 ">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="flex justify-center items-center md:w-1/6 "
+            >
               <img
                 className="w-[100px] md:w-full md:object-cover"
                 src={produit.logo}
                 alt={produit.nom}
               />
-            </div>
+            </motion.div>
             <div className="md:w-2/4">
               <div className="flex justify-start mb-2 gap-2 items-center">
                 <IoIosCafe />

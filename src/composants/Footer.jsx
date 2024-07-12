@@ -62,12 +62,16 @@ function Footer() {
               <h4>CONTACT US</h4>
               <ul>
                 <li>ADRESSE : Concession Chanic /Kitambo Magasin</li>
-                <a href="mailto:cafedufleuve@gmail.com" aria-label="email">
-                  <li>MAIL :cafedufleuve@gmail.com</li>
-                </a>
-                <a href="tel:00243 999999999" aria-label="number">
-                  <li>TELEPHONE : 00243 999999999</li>
-                </a>
+                <li>
+                  <a href="mailto:cafedufleuve@gmail.com" aria-label="email">
+                    MAIL :cafedufleuve@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:00243 999999999" aria-label="number">
+                    TELEPHONE : 00243 999999999
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -113,12 +117,16 @@ function Footer() {
               <h4>CONTACT US</h4>
               <ul>
                 <li>ADRESSE : Concession Silikin village /Kinshasa Gombe</li>
-                <a href="mailto:palmedor@gmail.com" aria-label="email">
-                  <li>MAIL :palmedor@gmail.com</li>
-                </a>
-                <a href="tel:00243 999999999" aria-label="number">
-                  <li>TELEPHONE : 00243 999999999</li>
-                </a>
+                <li>
+                  <a href="mailto:palmedor@gmail.com" aria-label="email">
+                    MAIL :palmedor@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:00243 999999999" aria-label="number">
+                    TELEPHONE : 00243 999999999
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -147,7 +155,7 @@ function Footer() {
           <p className="ml-4 md:ml-10 text-xs">
             Design{" "}
             <a
-              className=" animate-pulse font-bold after:content-['_']"
+              className=" font-bold after:content-['_'] text-black"
               href="https://github.com/Theodorebinda?"
               aria-label="Theodore"
             >
