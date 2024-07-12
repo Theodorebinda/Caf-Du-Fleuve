@@ -1,5 +1,6 @@
 import { IoIosCafe } from "react-icons/io";
 import { motion } from "framer-motion";
+import imageService from "../../images/pic-right.png";
 import React from "react";
 
 function AutreService() {
@@ -36,7 +37,7 @@ function AutreService() {
 
           <div className="flex flex-col md:flex-wrap justify-center items-center h-max-full  gap-5">
             <div className=" flex flex-col lg:flex-row justify-between items-center lg:gap-10">
-              <img className="" src="src\images\pic-right.png" alt="" />
+              <img className="" src={imageService} alt="image service" />
               <span>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis
@@ -48,7 +49,7 @@ function AutreService() {
               </span>
             </div>
             <div className=" flex flex-col lg:flex-row-reverse justify-between items-center lg:gap-10">
-              <img className="" src="src\images\pic-right.png" alt="" />
+              <img className="" src={imageService} alt="autre service" />
               <span>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis
@@ -60,7 +61,7 @@ function AutreService() {
               </span>
             </div>
             <div className=" flex flex-col lg:flex-row justify-between items-center lg:gap-10">
-              <img className="" src="src\images\pic-right.png" alt="" />
+              <img className="" src={imageService} alt="autre service" />
               <span>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Expedita quos ab similique molestiae beatae animi quo nobis

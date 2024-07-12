@@ -28,16 +28,16 @@
     "produits":[
         {
             "nom":"Robusta",
-            "logo":"src/images/Sans titre.png"
+            "logo":"../images/Sans titre.png"
 
         },
         {
             "nom":"Arabicca",
-            "logo":"src/images/Sans titre.png"
+            "logo":"../images/Sans titre.png"
         },
         {
             "nom":"Petit kwilu",
-            "logo":"src/images/Sans titre.png"
+            "logo":"../images/Sans titre.png"
         }
     ]
     
