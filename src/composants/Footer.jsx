@@ -155,7 +155,7 @@ function Footer() {
           <p className="ml-4 md:ml-10 text-xs">
             Design{" "}
             <a
-              className=" font-bold after:content-['_'] text-black"
+              className=" font-bold after:content-['_ '] text-black"
               href="https://portefolio-gules.vercel.app/"
               aria-label="Theodore"
             >

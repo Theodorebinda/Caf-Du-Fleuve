@@ -14,8 +14,8 @@ function Partenair({ nom, logo, genre }) {
           <div className="">
             <span className="text-sm">{nom}</span>
             <div>
-              <span>{genre}</span>
-              <span className="text-xs after:'_r'">
+              <span className="after:content-['_']">{genre}</span>
+              <span className="text-xs  ">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
                 numquam. Quod blanditiis in vel
               </span>
