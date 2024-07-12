@@ -24,7 +24,7 @@ function NavBar() {
         </span>
         <img
           className="sm:h-14 h-14 animate-bounce	"
-          src="src\images\Sans titre.png"
+          src="https://res.cloudinary.com/dhdaxlymt/image/upload/v1720807737/cafeDuFleuve/Sans_titre_hr65cz.png"
           alt=""
         />
       </Link>

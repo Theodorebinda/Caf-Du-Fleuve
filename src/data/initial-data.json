@@ -1,3 +1,5 @@
+
+
 {
     "partenaires":[
         {
@@ -28,16 +30,16 @@
     "produits":[
         {
             "nom":"Robusta",
-            "logo":"../images/Sans titre.png"
+            "logo":"https://res.cloudinary.com/dhdaxlymt/image/upload/v1720807737/cafeDuFleuve/Sans_titre_hr65cz.png"
 
         },
         {
             "nom":"Arabicca",
-            "logo":"../images/Sans titre.png"
+            "logo":"https://res.cloudinary.com/dhdaxlymt/image/upload/v1720807737/cafeDuFleuve/Sans_titre_hr65cz.png"
         },
         {
             "nom":"Petit kwilu",
-            "logo":"../images/Sans titre.png"
+            "logo":"https://res.cloudinary.com/dhdaxlymt/image/upload/v1720807737/cafeDuFleuve/Sans_titre_hr65cz.png"
         }
     ]
     

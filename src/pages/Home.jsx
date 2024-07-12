@@ -8,7 +8,7 @@ import ProduitListe from "../composants/landingPage/ProduitListe";
 
 function Home() {
   return (
-    <div className="flex flex-col justify-center items-center m-auto">
+    <div className="flex flex-col justify-center items-center m-auto overflow-hidden">
       <HiroSection />
       <AboutSection />
       <Amplacement />

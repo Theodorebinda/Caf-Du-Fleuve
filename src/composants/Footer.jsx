@@ -19,7 +19,7 @@ function Footer() {
             alt=""
           />
         </div>
-        <div className="flex justify-between md:justify-start md:gap-20 items-start">
+        <div className="flex flex-row justify-start md:gap-20 items-start">
           <div>
             <p className="ml-4 md:ml-10 text-sm my-4">
               Cultivé et produit en Republique Democratique du Congo
