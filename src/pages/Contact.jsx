@@ -1,3 +1,9 @@
+import HeroContact from "../composants/contactPage/heroContact";
+
 export default function Contact() {
-  return <h1 className="pt-20">Contact</h1>;
+  return (
+    <>
+      <HeroContact />
+    </>
+  );
 }
