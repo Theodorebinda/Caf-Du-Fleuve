@@ -29,15 +29,15 @@ function Amplacement() {
             <span>
               Cafe du fleuve café est une marque de café de qualité supérieure,
               produite à partir des meilleurs grains de café cultivés en
-              République démocratique du Congo. La kinoise café offre une
+              République démocratique du Congo. café du fleuve offre une
               expérience gustative unique, avec des arômes riches et intenses,
-              qui raviront les amateurs de café les plus exigeants. La kinoise
-              café est disponible dans plus de 11 supermarchés en RDC, où vous
+              qui raviront les amateurs de café les plus exigeants. café du
+              fleuve est disponible dans plus de 10 supermarchés en RDC, où vous
               pourrez trouver différents formats et variétés de café, adaptés à
               vos besoins et à vos envies. Que vous préfériez le café moulu, en
-              grains, en capsules ou en dosettes, la kinoise café vous garantit
-              une qualité irréprochable et un goût incomparable. La kinoise
-              café, c'est le choix du café authentique et savoureux, qui vous
+              grains, en capsules ou en dosettes, café du fleuve vous garantit
+              une qualité irréprochable et un goût incomparable. café du fleuve,
+              c'est le choix du café authentique et savoureux, qui vous
               accompagne tout au long de la journée.
             </span>
             <div className="w-1/2 py-2">

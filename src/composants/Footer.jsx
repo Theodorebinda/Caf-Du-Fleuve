@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import React from "react";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaRegCopyright, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -151,9 +151,10 @@ function Footer() {
           </div>
         </div>
 
-        <div className="bg-[#c2c2c2] py-2  bottom-0 w-full ">
-          <p className="ml-4 md:ml-10 text-xs">
-            Design{" "}
+        <div className="flex flex-row justify-center items-center bg-[#c2c2c2] py-2  bottom-0 w-full ">
+          <FaRegCopyright />
+          <p className="ml-4 text-xs">
+            Design by{"  "}
             <a
               className=" font-bold after:content-['_'] text-black"
               href="https://portefolio-gules.vercel.app/"
