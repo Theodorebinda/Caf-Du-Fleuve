@@ -153,14 +153,14 @@ function Footer() {
 
         <div className="flex flex-row justify-center items-center bg-[#c2c2c2] py-2  bottom-0 w-full ">
           <FaRegCopyright />
-          <p className="ml-4 text-xs">
+          <p className="ml-2 text-xs">
             Design by{"  "}
             <a
               className=" font-bold after:content-['_ '] text-black"
               href="https://portefolio-gules.vercel.app/"
               aria-label="Theodore"
             >
-              Theodore
+              Theodore{" "}
             </a>
             {"tous droits reservés Palme D'or"}
           </p>

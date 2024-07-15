@@ -1,20 +1,15 @@
 import React from "react";
-function HeroContact(props) {
+function HeroContact() {
   return (
-    <main className="min-w-full">
-      <div className="bg-[url('./public/breadcrumb_bg_01.jpg')] pt-20 h-[90vh] flex flex-col  justify-center items-start pl-4 gap-4 font-semibold bg-no-repeat bg-center  bg-cover   text-white font-sans">
-        <h1 className="  text-6xl">Contactez Nous</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-          soluta.
-        </p>
+    <main className="w-full pt-14 mb-10 ">
+      <div className="bg-[url('./public/breadcrumb_bg_01.jpg')] bg-[#060608] h-[70vh] flex flex-col  justify-center items-start pl-4 gap-4 font-bold bg-no-repeat bg-center  bg-cover text-white">
+        <h1 className="  text-6xl">Nous Contactez</h1>
+        <span>Nous vous repondons 24 / 7</span>
       </div>
-      <div className="w-[20vh] rounded-full top-10 stycki   transform  border-4 border-white">
-        <img
-          className="object-cover rounded-full"
-          src="./public/WhatsApp Image 2023-11-03 à 14.47.25_885eaa4f.jpg"
-        ></img>
-      </div>
+      <img
+        className="object-cover  w-[18vh] rounded-full -mt-20 ml-5  relative "
+        src="./public/WhatsApp Image 2023-11-03 à 14.47.25_885eaa4f.jpg"
+      />
     </main>
   );
 }
