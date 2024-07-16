@@ -66,7 +66,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="">
+    <div className="bg-white">
       <Localisation />
       <form ref={form} onSubmit={sendEmail} className="">
         <div className="">
