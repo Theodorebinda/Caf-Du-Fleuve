@@ -78,9 +78,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col bg-white p-4 md:p-10 m-3 md:m-10 rounded-md">
+    <div className="flex flex-col bg-white p-4 md:p-10 m-3 md:m-10 rounded-md ">
       <Localisation className={"mb-10 md:mb-20"} />
-      <form ref={form} onSubmit={sendEmail} className=" flex flex-col gap-4">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className=" flex flex-col gap-4 mb-10"
+      >
         <div className="flex flex-col md:flex-row md:justify-between md:gap-8 items-start md:items-center w-full">
           <div className="flex flex-col gap-2 md:w-1/2 w-full mb-4">
             <label className="font-semibold">Nom</label>
@@ -126,7 +130,7 @@ const ContactForm = () => {
           <textarea
             name="message"
             placeholder="votre message"
-            className="placeholder-gray-500 bg-transparent focus:outline-none focus:border-b-2 pb-5 border-b resize-none"
+            className="placeholder-gray-500 bg-transparent focus:outline-none focus:border-b-2 pb-5 mb-4 border-b resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
